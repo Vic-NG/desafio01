@@ -7,7 +7,7 @@ function validar(formTeste){
                 return false;
             }
         }
-        alert("");
+        alert("formularioValido");
         return true;
     
 }
