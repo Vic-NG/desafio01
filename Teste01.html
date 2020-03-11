@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8" >
     <h1> Formulário </h1>
+    <link rel="stylesheet" type="text/css" href="Teste01.css">
 </head>
 
 <body>
     <form name = "formTeste" onsubmit="return validar(this);">
     <fieldset>
     <label for = "nome" >Nome: </label><br>
-    <input type = "text" minlength="3" id = "nome" name = "nome" maxlength="20" placeholer="Digite seu nome" required  pattern ="[a-zA-Z\s]+$" title="Por favor use somente letras."> <br>
+    <input type = "text" minlength="3" id = "nome" name = "nome" maxlength="20" placeholder="Digite seu nome" required  pattern ="[a-zA-Z\s]+$" title="Por favor use somente letras."> <br>
     <label for ="pontos">Pontos: </label><br>
-    <input type ="number" min = "0.00"  max = "10.00" name = "pontos" placeholder="0.0" required ><br> 
+    <input type ="number" min = "0.00"  max = "10" name = "pontos" placeholder="0" required ><br> 
     <label for ="nota">Nota: </label><br>
     <input type = "number" id = "nota" min = "0" max = "10" value = "null" maxlength="2" placeholder="0.0" required><br> 
     <label for = "nomeUniversidade" >Universidade: </label><br>
@@ -20,6 +21,12 @@
     <input type = "text" id = "nomeEmpresa" name = "nomeEmpresa" maxlength="50" required> <br> 
     <label for = "horario" >Horário: </label><br>
     <input type = "time" name = "horario" required> <br><br> 
+    <label><input type ="radio" name="sexo" value="masc" >
+        <img src="img/img_avatar.png" class="avatar">
+    </label>
+    <label><input type ="radio" name="sexo" value="fem" >
+        <img src="img/img_avatar2.png" class="avatar">
+    </label> <br> 
     <input type ="submit" name = "Enviar">
  </form>
  <script src="Teste01.js"></script>
