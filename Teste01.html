@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8" >
     <h1> Formulário </h1>
@@ -10,18 +10,18 @@
     <form name = "formTeste" onsubmit="return validar(this);">
     <fieldset>
     <label for = "nome" >Nome: </label><br>
-    <input type = "text" minlength="3" id = "nome" name = "nome" maxlength="20" placeholder="Digite seu nome" required  pattern ="[a-zA-Z\ç]+$" title="Por favor use somente letras."> <br>
+    <input type ="text" minlength="3" id ="nome" name ="nome" maxlength="20" placeholder="Digite seu nome" required pattern="[A-Za-z\s]+$" title="Por favor use somente letras."> <br>
     <label for ="pontos">Pontos: </label><br>
-    <input type ="number" min = "0.00"  max = "10" name = "pontos" placeholder="0" required ><br> 
+    <input type ="number" min ="0"  max ="10" name = "pontos" placeholder="0" required ><br> 
     <label for ="nota">Nota: </label><br>
-    <input type = "number" id = "nota" min = "0" max = "10" value = "null" maxlength="2" placeholder="0" required><br> 
-    <label for = "nomeUniversidade" >Universidade: </label><br>
-    <input type = "text" id = "nomeUniversidade" name = "nomeUniversidade" maxlength="50" placeholder="Digite o nome da instituição" required> <br> 
+    <input type ="number" id ="nota" min ="0" max ="10" maxlength="2" placeholder="0" required><br> 
+    <label for ="nomeUniversidade" >Universidade: </label><br>
+    <input type ="text" id ="nomeUniversidade" name ="nomeUniversidade" maxlength="50" placeholder="Digite o nome da instituição" required> <br> 
     <label for = "nomeEmpresa" >Empresa: </label><br>
     <input type = "text" id = "nomeEmpresa" name = "nomeEmpresa" maxlength="50" placeholder="Digite o nome da empresa" required> <br> 
     <label for = "horario" >Horário: </label><br>
     <input type = "time" name = "horario" required> <br><br> 
-    <label><input type ="radio" name="sexo" value="masc" >
+    <label><input type ="radio" name="sexo" value="masc">
         <img src="img/avatar1.png" class="avatar">
     </label>
     <label><input type ="radio" name="sexo" value="fem" >
@@ -32,5 +32,4 @@
  <script src="Teste01.js"></script>
 
 </body>
-
 </html>
